@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    color: #161616;
+}
+a {
+    text-decoration: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 60px;
+    left: 2%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*espaçamento itens*/
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+    margin-left: 3%;
+    text-align: center;
+}
+
+/*dimensionamento da imagem*/
+.topnav img {
+    height: 80px;
+    width: 80px
+}
+
+/*links centrais*/
+
+.mylinks {
+    width: 400px;
+    font-size: 13px;
+    justify-content: space-around;
+ 
+    
+}
+.hover-link {
+    display: inline-block; /*permite determinar height and width*/
+    position: relative; /*permite posicionar um elemento em relação ao local onde ele estaria em um fluxo normal*/
+   
+}
+
+.hover-link:after {
+    content: '';
+    position: absolute;/*remove o elemento do flux da página, não altera a posição dos demais elementos é como se o elemento não estivesse na página*/
+    width: 100%;
+    transform: scaleX(0); /*redimensiona um elemento em relação a um eixo, no caso horizontal* nesse caso deixa a barra invisível*/
+    height: 2px;
+    bottom: 0; /*posição para position absolute*/
+    left: 0; /*posição para position absolute*/
+    background-color:#ca3b3a;
+    transform-origin: bottom left; /* determina o início da transformação*/
+    transition: transform 500ms ease-out;
+}
+
+.hover-link:hover:after {
+transform: scaleX(1); /*determina o tamanho final do elemento após o efeito gatilho*/
+transform-origin: bottom left; /* determina o fim da transformação*/
+}
+/*ajustar altura divs*/
+.mylinks , .icons {
+    padding-top: 30px;
+}
+/*flex icons*/
+
+.icons {
+    display: inline;
+    width: 200px;
+    
+}
+
+.icons a {
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+/*img resize*/
+
+.sample {
+    height: 95%;
+    width: 60%
+}
+
+/*styling product info*/
+
+.product {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+}
+
+.title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color:#ca3b3a;
+}
