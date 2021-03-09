@@ -84,9 +84,16 @@ transform-origin: bottom left; /* determina o fim da transformação*/
 
 /*img resize*/
 
+.container {
+    display: block;
+    margin-left: 5%;
+    margin-right: 0;
+    width: max-content;
+}
 .sample {
-    height: 95%;
-    width: 60%
+    height: 100%;
+    width: 60%;
+   padding-left: 5%;
 }
 
 /*styling product info*/
@@ -95,11 +102,123 @@ transform-origin: bottom left; /* determina o fim da transformação*/
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
-    padding-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .title {
     font-size: 2rem;
     letter-spacing: 2px;
     color:#ca3b3a;
+    padding-top:  10%;
+}
+
+/*side buttons*/
+
+.image {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-between;
+margin-right: 20px;   
+}
+.first {
+    height: 60px;
+    width: 4px;
+    background-color: #dedede;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.circle {
+    
+    height: 6px;
+    width: 6px;
+    background-color: #dedede;
+    padding-right: 4px;
+    text-align: center;
+    border-radius: 50%;  
+}
+
+
+/*detalhes produtos*/
+
+.subtitle {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+#grade-star {
+    color:#ca3b3a
+}
+
+.description {
+    padding-top: 5%;
+  
+}
+
+/*price*/
+
+.price {
+    display:flex;
+    font-size:1.5rem;
+    padding-top: 5%;
+    margin:0%;
+}
+
+#amount {
+    margin-right: 30%;
+}
+#payment {
+    display:flex
+}
+#comprar {
+    padding-right: 6%;
+    padding-left: 6%;
+    padding-top: 5%;
+    padding-bottom:5%;
+    text-transform: uppercase;
+    color:white;
+    background-color: #ca3b3a;
+    border-width: 0px;
+    font-size: 0.8rem;
+    min-width: 150px;
+    cursor:pointer;
+
+}
+
+.check-out {
+    display:flex;
+    flex-direction:column
+}
+
+.foto {
+    display:flex
+}
+.info {
+    margin-right:10%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.rodape {
+    background-color:#F9F7D6;
+    width:100%;
+    height:10%;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+
+.destaques {
+    padding-top:1%;
+    display:flex;
+    justify-content:space-evenly;
+    width:100%
+}
+.texto
+{
+    font-size: 0.8rem;
+    width: 170px;
 }
