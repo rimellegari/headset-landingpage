@@ -128,6 +128,7 @@ margin-right: 20px;
     background-color: #dedede;
     text-align: center;
     border-radius: 2px;
+    
 }
 
 .circle {
@@ -186,7 +187,9 @@ margin-right: 20px;
     cursor:pointer;
 
 }
-
+#comprar:hover {
+    background-color:#161616;
+}
 .check-out {
     display:flex;
     flex-direction:column
@@ -221,4 +224,17 @@ margin-right: 20px;
 {
     font-size: 0.8rem;
     width: 170px;
+}
+
+@media (max-width:400px) {
+
+    .mylinks {
+        visibility: visible;
+    }
+    
+    .product {
+        display:flex;
+        flex-direction:column;;
+
+    }
 }
